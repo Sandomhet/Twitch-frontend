@@ -101,7 +101,7 @@ export const addFavoriteItem = (favItem) => {
       "Content-Type": "application/json",
     },
     credentials: "include",
-    body: JSON.stringify({ favorite: favItem }),
+    body: JSON.stringify( favItem ),
   }).then((response) => {
     if (response.status !== 200) {
       throw Error("Fail to add favorite item");
@@ -116,7 +116,7 @@ export const deleteFavoriteItem = (favItem) => {
       "Content-Type": "application/json",
     },
     credentials: "include",
-    body: JSON.stringify({ favorite: favItem }),
+    body: JSON.stringify( favItem ),
   }).then((response) => {
     if (response.status !== 200) {
       throw Error("Fail to delete favorite item");
