@@ -73,7 +73,7 @@ const renderCardGrid = (data, loggedIn, favs, favOnChange) => {
         sm: 2,
         md: 3,
         lg: 3,
-        xl: 5,
+        xl: 3,
       }}
       dataSource={data}
       renderItem={(item) => (
